@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Error - Critical Failure</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            animation: flash 1s infinite;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        @keyframes flash {
+            0% { background-color: black; }
+            50% { background-color: darkred; }
+            100% { background-color: black; }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                alert("Warning! System will shut down in 60 seconds!");
+            }, 3000);
+            setTimeout(function() {
+                alert("Critical failure! Shutting down...");
+            }, 10000);
+        }
+    </script>
+</head>
+<body>
+    <h1>!! WARNING !!</h1>
+    <p>Critical System Failure Detected</p>
+    <p>Error Code: <strong>0x0000F4</strong></p>
+    <p>All your files are at risk.</p>
+    <p style="color: white; font-weight: bold;">دي لسه بدايتنا يا امير عمر</p>
+    <p>Immediate action required!</p>
+    <audio autoplay loop>
+        <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>
